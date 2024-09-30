@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+ul, li {
+    list-style: none;
+
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+ul, li, a {
+    display: inline-block;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* common css ends */
+
+header{
+    background-color: black;
+
+}
+.head{
+line-height: 30px;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+}
+.head p{
+    color: white;
+    text-align: center;
+transform: translateX(103%);
+}
+.head p a{
+color: white;
+text-decoration: underline;
+}
+.head i{
+    text-align: end;
+    justify-self: flex-end;
+    color: white;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 300;
+    transform: translateX(-470%);
+}
+/* haeder css ends */
+.menu{
+    display: flex;
+gap: 1%;
+}
+.logo{
+    height: 30px;
+margin-top: 10px;
+}
+.menuitem{
+    display: flex;
+    flex-basis: 35%;
+
+    
+}
+.menuitem> ul{
+    display: flex;
+    gap: 25px;
+    line-height: 40px;
+}
+.menuitem a{
+color: black;
+}
+.menuitem> ul li {
+position: relative;
+font-size: 20px;
+}
+.menuitem> ul li:first-child{
+    margin-left: 13px;
+}
+.menuitem > ul li ul {
+    position: absolute;
+    top: 35px;
+    left: -11px;
+    display: none;
+    width: 80px;
+    text-align: center;
+    backdrop-filter:blur(10px);;
+    
+}
+.searchbar{
+    flex-basis: 36%;
+}
+.searchbar input{
+    width: 100%;
+    padding: 5px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.shop, .profile{
+padding-left: 13px;
+padding-right: 13px;
+line-height: 40px;
+font-size: 25px;
+}
+/* hero section start */
+.heros{
+    background-image: url(../img/banner-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 621px;
+    margin-top: 0.5vw;
+}
+.hero h1{
+    font-size: 70px;
+    width: 50vw;
+    padding-top: 40px;
+    font-weight: 900;
+    line-height: 70px;
+    padding-bottom: 20px;
+}
+.hero .text p{
+    width: 45vw;
+    font-size: 1.5vw;
+    padding-bottom: 2vw;
+}
+.hero .text button{
+    padding: 10px 40px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    margin-bottom: 4vw;
+    cursor: pointer;
+}
+.rv {
+    display: flex;
+    width: 45vw;
+
+}
+.rv .review{
+    padding: 0px 1.5vw;
+    position: relative;
+    text-align: center;
+
+}
+.rv .review::after{
+content: '';
+right: 0;
+top: 5px;
+position: absolute;
+height: 4vw;
+width: 2px;
+color: gray;
+background-color:gainsboro;
+}
+.rv .review:last-child::after{
+    content: none;
+}
+.rv .review:first-child{
+    padding-left: 0px;
+}
+.rv h5{
+    font-size: 2.4vw;
+}
+.rv p{
+    padding-top: 7px;
+}
+/* brands start */
+
+.brand{
+    background-color: black;
+
+}
+.brnd{
+    height: 120px;
+    display: flex;
+justify-content: space-around;
+}
+.brnd h5 a{
+    font-size: 3.5vw;
+    line-height: 120px;
+    color: white;
+}
+/* new arrival start  */
+
+.newarrvals .sechead h3{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+#shop{
+    display: flex;
+    width: 100%;
+    flex-basis: 23%;
+    gap: 2%;
+}
+
+
+.shop_item img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.shop_item h5{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 1.5vw;
+}
+.shop_item p{
+    padding-top: 1vw;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 900;
+}
+.shop_item p span{
+    padding-right: 3px
+}
+
+.newarrvals button{
+    margin-top: 2vw;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    transform: translateX(395%);
+    margin-bottom: 2vw;
+}
+/* neew arrivals ends */
+/* top sellingg starrt */
+.topsale .sechead h3{
+        text-align: center;
+        font-size: 36px;
+        margin-top: 3vw;
+        margin-bottom: 2vw;}
+
+        #bestSell{
+            display: flex;
+            width: 100%;
+            flex-basis: 23%;
+            gap: 2%;
+        }
+        
+        
+        .sale_item img{
+            width: 100%;
+            border-radius: 10px;
+            
+        }
+        .sale_item h5{
+            font-size: 16px;
+            text-align: center;
+            margin-top: 1.5vw;
+        }
+        .sale_item p{
+            padding-top: 1vw;
+            text-align: center;
+            font-size: 23px;
+            font-weight: 900;
+        }
+        .sale_item p::after{
+            content:'' ;
+        }
+        .sale_item p span{
+            padding-right: 3px
+        }
+        
+        .topsale button{
+            margin-top: 2vw;
+            padding: 10px 40px;
+            border-radius: 20px;
+            color: black;
+            background-color: white;
+            transform: translateX(395%);
+            margin-bottom: 2vw;
+        }
+        /* top sale ends */
+
+        /* dress style start */
+        .dstyle{
+            background-color: rgb(179, 176, 176);
+            border-radius: 40px;
+            height: 600px;
+        }
+ .dstyle .sechead h3{
+            text-align: center;
+            font-size: 36px;
+            padding-top: 3vw;
+            padding-bottom: 2vw;}
+
+.box{
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.casual , .gym {
+    width: 29%;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+overflow: hidden;
+    margin: 1% 0;
+}
+.formal , .party {
+    position: relative;
+    border-radius: 20px;
+overflow: hidden;
+    width: 69%;
+    height: 200px;
+    margin: 1% 0;
+}
+.casual img , .formal img ,.party img , .gym img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all linear 0.3s;
+}
+
+.casual img:hover , .formal img:hover ,.party img:hover , .gym img:hover {
+transform: scale(1.2);}
+.casual p , .formal p ,.party p , .gym p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 900;
+}
+/* dress dtyle ends */
+/* slide start */
+
+
+.cmntrev .sechead h3{
+    font-size: 36px;
+    padding-top: 3vw;
+text-align: start;
+    padding-bottom: 2vw;}
+ .cmntrev   button{
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgb(180, 178, 175);
+           width: 35px;
+           margin: 10px;
+           transform: translate(77vw,-23vh);
+       
+       }
+#customer{
+    display: flex;
+}
+       .cmntrev #customer .cmnt_info{
+    border: 1px solid black;
+    width: 27vw;
+    margin: 0 2vw;
+    padding: 1vw;
+}

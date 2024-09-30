@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header>
+    <div class="container head">
+      <p>Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a></p>
+      <i class="fas fa-times"></i>
+    </div>
+  </header>
+  <!-- header html ends -->
+   <nav>
+    <div class="menu container">
+      <div class="logo">
+        <img src="img/SHOP.CO.png" alt="logo.png">
+      </div>
+      <div class="menuitem">
+        <ul>
+          <li><a href="#">Shop <i class="fal fa-angle-down"></i>
+              <ul class="dropdown">
+                <li><a href="#">Shop 1</a></li>
+                <li><a href="#">Shop 2</a></li>
+                <li><a href="#">Shop 3</a></li>
+                <li><a href="#">Shop 4</a></li>
+              </ul>  
+          </a></li>
+          <li><a href="#">On Sale</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Brands</a></li>
+        </ul>
+      </div>
+      <div class="searchbar">
+        
+        <input type="search" name="search" id="navsearch" placeholder="Search for products...">
+      </div>
+      <div class="shop">
+        <i class="fal fa-shopping-cart"></i>
+      </div>
+      <div class="profile">
+        <i class="far fa-user-circle"></i>
+      </div>
+
+    </div>
+   </nav>
+   <!-- hero section -->
+    <section class="heros">
+      <div class="bgimg"></div>
+      <div class="container hero">
+        <div class="text">
+          <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+          <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individually and cater to your sense of style</p>
+          <button>Shop Now</button>
+        </div>
+        <div class="rv">
+          <div class="review">
+            <h5>200+</h5>
+            <p>International Brands</p>
+          </div>
+          <div class="review">
+            <h5>2,000+</h5>
+            <p>High-Quality Products</p>
+          </div>
+          <div class="review">
+            <h5>30,000+</h5>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+    <section class="brand">
+      <div class="container brnd">
+        <h5><a href="#">ZARA</a></h5>
+        <h5><a href="#">ARONG</a></h5>
+        <h5><a href="#">GUCCI</a></h5>
+        <h5><a href="#">EASY</a></h5>
+        <h5><a href="#">CALVIN KLEIN</a></h5>
+      </div>
+    </section>
+    <!--  new arrivals start -->
+      <section class="newarrvals">
+      <div class="container">
+        <div class="sechead">
+          <h3>NEW ARRIVALS</h3>
+        </div>
+        <div id="shop"></div>
+        <button>View  All</button>
+        <hr>
+      </div>
+     
+      </section>
+      <!-- neeww aarrivals ends -->
+    <!--  topsale start -->
+      <section class="topsale">
+      <div class="container">
+        <div class="sechead">
+          <h3>TOP SALLING</h3>
+        </div>
+        <div id="bestSell"></div>
+        <button>View  All</button>
+        
+      </div>
+     
+      </section>
+
+      <!-- top sale ends -->
+       <!-- dress style start -->
+        <section class="browse">
+          <div class="container dstyle">
+            <div class="sechead">
+              <h3>BROWSE BY DRESS STYLE</h3>
+            </div>
+            <div class="box">
+              <div class="casual">
+                <img src="img/casual.png" alt="">
+                <p>CASUAL</p>
+              </div>
+              <div class="formal">
+                <img src="img/formal.png" alt="">
+                <p>FORMAL</p>
+
+              </div>
+              <div class="party">
+                <img src="img/party.png" alt="">
+                <p>PARTY</p>
+              </div>
+              <div class="gym">
+                <img src="img/gym.png" alt="">
+                <p>GYM</p>
+              </div>
+            </div>
+          </div>
+        </section>  
+        <!-- browse ends -->
+         <!-- review start -->
+         
+
+          <section class="customer">
+            <div class="container cmntrev">
+              <div class="sechead">
+                <h3>OUR HAPPY CUSTOMERS</h3>
+              </div>
+              <button onclick="goPre()">></button>
+              <button onclick="goNxt()"><</button>
+
+              <div id="customer">
+                
+              </div>
+              </div>
+              </section>
+
+          <script src="js/cmnt.js"></script>
+      <script src="js/new.js"></script>
+      <script src="js/top.js"></script>
+<script src="js/script.js"></script>
+</body>
+ 
+</html>

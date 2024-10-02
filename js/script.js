@@ -21,6 +21,7 @@ let generateShop = () => {
 }
 
 generateShop()
+// best sell
 const bestSalle = document.getElementById('bestSell')
 
 let dibba = JSON.parse(localStorage.getItem('data')) || []
@@ -46,50 +47,41 @@ let generateSale = () => {
 generateSale()
 
 // slide section in review
-const cement = document.getElementById('customer')
-let jar = JSON.parse(localStorage.getItem('data')) || []
-let generateCmnt = () => {
-       cement.innerHTML = commentData.map((z) => {
-             
-           let {id,name,comment} = z 
+const swiper = new Swiper('.swiper', {
+       direction: 'horizontal',
+       loop: true,
      
-         return `
-               <div class='cmnet'  id=cstmr-id-${id}>
-                    <div class='cmnt_info' >
-                           <h5>${name}</h5>
-                           <p  class='price'> ${comment} </p>
-                    </div>
-                </div>  
-         `
+       slidesPerView: 3,
+     spaceBetween: 32,
      
-        }).join('')
-     }
+       // Navigation arrows
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
      
-     generateCmnt()
-const slide = document.querySelectorAll('.cmnt_info');
-var counter = 0;
-slide.forEach(
-       (slide,index) => {
-              slide.style.left = '${index * 100}%'
+       // And if we need scrollbar
+       scrollbar: {
+         el: '.swiper-scrollbar',
+       },
+       breakpoints: {
+           
+           384:{
+               slidesPerView: 1,
+               spaceBetween: 32,
+           },
+           768:{
+               slidesPerView: 2,
+               spaceBetween: 32,
+   
+           },
+           1024:{
+               slidesPerView: 3,
+               spaceBetween: 10,
+   
+           }
        }
-)
-const slideDiv = () => {
-       slide.forEach(
-              (slide) => {
-                     slide.style.transform = 'translateX(-${counter * 100}%)'
-              }
-       )
-}
-const goPre = () => {
-       counter--
-       alert('prev')
-       console.log('iii')
-       slideDiv()
-
-}
-const goNxt = () => {
-       counter++
-       alert('next')
-       slideDiv()
-
-}
+     });
+   //   swiper  ends
+   
+       

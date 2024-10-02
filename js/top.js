@@ -1,4 +1,4 @@
-    let bestSale = [
+let bestSale = [
         {
             "id": 1,
             "name": "T-shirt with tape Details",

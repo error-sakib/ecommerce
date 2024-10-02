@@ -334,28 +334,134 @@ transform: scale(1.2);}
 }
 /* dress dtyle ends */
 /* slide start */
-
-
+.customer{
+    margin-bottom: 250px;
+}
 .cmntrev .sechead h3{
     font-size: 36px;
     padding-top: 3vw;
 text-align: start;
     padding-bottom: 2vw;}
- .cmntrev   button{
+ .cmntrev {
+    position: relative;
+ }
+ .cmntrev   .pre {
         height: 35px;
         border-radius: 50%;
-        background-color: rgb(180, 178, 175);
            width: 35px;
            margin: 10px;
-           transform: translate(77vw,-23vh);
+           transform: translate(-3vw,-0vh);
        
        }
-#customer{
-    display: flex;
+ .cmntrev  .nxt{
+        height: 35px;
+        border-radius: 50%;
+           width: 35px;
+           margin: 10px;
+           transform: translate(3vw,-0vh);
+       
+       }
+
+       .cmntrev .reviwe{
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    padding: 2vw;
+    min-width: 300px;
+    height: 260px;
+ 
+
 }
-       .cmntrev #customer .cmnt_info{
-    border: 1px solid black;
-    width: 27vw;
-    margin: 0 2vw;
-    padding: 1vw;
+.comment{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.reviwe .rate {
+    color: gold;
+    padding-bottom: 1vw;
+}
+    .reviwe h1{
+        padding-bottom: 1vw;
+    }
+.reviwe h1 span {
+    color: rgb(150, 235, 23);
+    padding-left: 10px;
+}
+
+
+
+
+/* +++++++++++++++++++++++++++++ */
+.slider-container {
+    width: 300px;
+    overflow-x: hidden;
+    position: relative;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 300px;
+    height: 200px;
+}
+
+.swiper{
+    width: 80vw;
+    height: 300px;
+}
+.pre {
+    transform: translateX(-500px);
+}
+
+/* =================
+               popup
+                   ========================*/
+.popup{
+    width: 80vw;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 200px;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5vw;
+    position: absolute;
+    top: -100px;
+}
+.popup h2{
+    width: 40vw;
+    font-size: 40px;
+}
+.popup form{
+    width: 40%;
+}
+.popup form input{
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 1vw;
+}
+.popup form button{
+    width: 100%;
+    padding: 13px 40px;
+    border-radius: 20px;
+    margin-bottom: 1vw;
+    font-size: 18px;
+}
+.lastpart{
+    background-color: rgb(189, 186, 186);
+    position: relative;
+}
+
+.lastpart .contact{
+    padding-top: 140px;
+}
+.contact .info {
+    width: 20%;
+}
+.contact img{
+    margin-bottom: 40px;
+}
+.contact p {
+width: 100%;
 }
